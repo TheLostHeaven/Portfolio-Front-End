@@ -1,0 +1,101 @@
+@import '../../assets/styles/custom-Colors'
+
+// .main
+//   display: flex
+//   justify-content: flex-end
+//   position: relative
+//   height: 100vh
+.permission_denied a
+  text-decoration: none
+
+
+.denied__wrapper
+  max-width: 50rem
+  width: 100%
+  height: 390px
+  display: block
+  margin: 0 auto
+  position: relative
+
+.text
+  color: $text-color
+  margin-left: 5rem
+  max-width: 25rem
+
+
+.not-Found
+  color: $text-color
+  font-size: 100px
+  margin: 5rem
+  font-weight: 800
+
+span
+  color: $primary-color
+
+.planet
+  display: flex
+  justify-content: flex-end
+  height: 100vh
+  max-height: 30rem
+  position: absolute
+  bottom: 0
+  right: 0
+  width: auto
+  max-width: 60%
+  margin-right: 5rem
+
+.button
+  margin-left: 12rem
+  margin-top: 2.5rem
+
+
+#astronaut
+  width: 43px
+  position: absolute
+  right: 20px
+  top: 210px
+  animation: spin 4.5s infinite linear
+
+
+@keyframes spin
+  0%
+    transform: rotateZ(0deg)
+
+  100%
+    transform: rotateZ(360deg)
+
+
+
+@media (max-width: 600px)
+  .permission_denied h1
+    font-size: 75px
+
+  .permission_denied h3
+    font-size: 16px
+    width: 200px
+    margin: 0 auto
+    line-height: 23px
+
+  .permission_denied h3 span
+    width: 60px
+
+  #astronaut
+    width: 35px
+    right: 40px
+    top: 170px
+
+
+
+.saturn,
+.saturn-2,
+.hover
+  animation: hover 2s infinite ease-in-out alternate
+
+
+@keyframes hover
+  0%
+    transform: translateY(3px)
+
+  100%
+    transform: translateY(-3px)
+
