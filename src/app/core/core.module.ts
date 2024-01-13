@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LoaderComponent } from './common/loader/loader.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HeaderComponent } from './layout/header/header.component';
+import { CardComponent } from './lib/card/card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
@@ -12,7 +13,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     LoaderComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    CardComponent,
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { RouterModule } from '@angular/router';
   exports: [
     FooterComponent,
     LoaderComponent,
-    HeaderComponent
+    HeaderComponent,
+    CardComponent,
   ]
 })
 export class CoreModule { }
