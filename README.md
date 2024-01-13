@@ -1,28 +1,77 @@
-# Portfolio
+# Portfolio-Front-End - Angular
+
+En este proyecto se realizo en un portfolio-back-end que contiene una base de datos para guardar los proyectos y demas cosas como imagenes, etc, puedes visualizar el despliegue 
+<a href="#">Proximamente</a>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
 
-## Development server
+## Version Oficial V1.0
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Estructura de carpetas
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Funcionalidades
 
-## Build
+- Se implemento una `Header` en su primera version para navegar por las diferente rutas del proyecto.
+- Se implemento una `Footer`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Tecnologias Usadas
+- NodeJs
+- TypeScript
+- Angular CLI
+- TailWind
+- Sass
 
-## Running unit tests
+## Instalacion
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1 Clona el repositorio en tu maquina local
+```bash
+$ git clone https://github.com/TheLostHeaven/Portfolio-Front-End
+```
 
-## Running end-to-end tests
+2 Navega en el directorio del proyecto 
+```bash
+$ cd Portfolio-Front-End
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3 Puedes cambiar el origen del proyecto con los siguientes comando
 
-## Further help
+```bash
+$ git remote -v
+$ git remote remove origin
+$ git remote add origin <nueva_url_del_repositorio>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# Portfolio-Front-End
+4 Instalar las dependecias necesarias
+- Recuerda tener el package.json y el package-lock.json en el root de la carpeta y ejecutas
+
+```bash
+$ npm i
+```
+
+## Referencia
+
+- Puedes ver la estructura del Back-End clickeando <a href="https://github.com/TheLostHeaven/Portfolio-Back-End">aqui</a>
+
+
+## Uso
+
+1 Inicia la app con 
+```bash
+$ ng s -o
+```
+
+2 Puedes acceder a ella desde el puerto configurado:
+
+http://localhost:4200
+
+3 Prueba las diferentes Funcionalidades de la pagina 
+
+## Contacto
+
+Si tienes alguna pregunta o sugerencia o quieres la documentacion para desarrollar este proyecto, no dudes en contactarme en [tiquedaniel2002@gmail.com](tiquedaniel2002@gmail.com).
+
+
+## Autors
+
+- [@Daniel Molina](https://github.com/TheLostHeaven)
