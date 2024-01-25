@@ -1,7 +1,12 @@
 
 <div class="main">
   <div class="card">
-    <div class="card_back"></div>
+
+    <div >
+      <img [src]="imgSrc" alt=" {{ publication.title }} ">
+    </div>
+
+
   </div>
   <div class="data">
     <div class="img">
@@ -215,9 +220,11 @@
       </svg>
     </div>
     <div class="text">
-      <div class="tittle"></div>
-      <div class="description"></div>
-      <div class="framework">Angular, Angular, Angular</div>
+
+      <div class="title"> {{ publication.title }} </div>
+      <div class="description"> {{ publication.content }} </div>
+      <div class="tech">{{ publication.tech }}</div>
+
     </div>
   </div>
   <div class="btns">
