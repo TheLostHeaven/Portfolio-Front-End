@@ -1,0 +1,75 @@
+<div class="header">
+  <app-header></app-header>
+</div>
+
+<div class="main">
+
+<section class="bg-white dark:bg-gray-900">
+  <div class="container px-10 py-10 mx-auto">
+      <section class="mt-8 space-y-8 lg:mt-12">
+          <section class="lg:flex lg:items-center">
+              <div class="lg:w-1/2 ">
+                  <h1 class="title">Hola, Soy <span>Daniel Molina</span> y soy un <span>Desarrollador Web Full Stack </span>:D</h1>
+                  <h2 class="title2 mt-8 space-y-8 lg:mt-12"><span>FullStack</span> Web Developer <span>MEAN</span></h2>
+                  <button >
+                    <a href="" target="_blank" download="Profile.pdf" class="button mt-8 space-y-8 lg:mt-12 w-[150px] bg-black h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#ad59c4] before:to-[#be38e3] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]" >
+                      Descargar CV
+                    </a>
+                    </button>
+                </div>
+              <div class="mt-4 lg:w-1/2 lg:mt-0">
+                  <img class="w-full h-64 rounded-lg md:h-96"
+                      src="../../../assets/img/Logo-Big.svg"
+                      alt="Logo Brain">
+              </div>
+          </section>
+      </section>
+  </div>
+</section>
+
+<section class="bg-white dark:bg-gray-900">
+  <div class="container px-10 py-10 mx-auto">
+      <section class="mt-8 space-y-8 lg:mt-12">
+          <section class="lg:flex">
+                <div class="">
+                  <h1 class="title"><span>#/</span>Proyectos</h1>
+                </div>
+                  <div class="lg:w-full">
+                    <button class="overflow-hidden relative p-2 bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group w-full rounded-lg text-right text-bottom">
+                      <a href="/Projects">
+                        Ver Todo ->
+                        <span class="absolute w-36 h-32 -top-8 -left-2 bg-green-200 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-bottom"></span>
+                        <span class="absolute w-36 h-32 -top-8 -left-2 bg-green-400 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-bottom"></span>
+                        <span class="absolute w-36 h-32 -top-8 -left-2 bg-green-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-bottom"></span>
+                        <span class="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-1 z-5 w-full rounded-lg text-right text-bottom">Ver Todo -></span>
+                      </a>
+                    </button>
+                  </div>
+          </section>
+      </section>
+  </div>
+</section>
+</div>
+
+
+  <div class="items-center">
+    <ng-container *ngIf="(publication$ | async ) as publications;" >
+      <app-card *ngFor="let publication of publications" [publication]="publication"></app-card>
+    </ng-container>
+  </div>
+
+  <!-- <div class="items-center">
+    <ng-container *ngIf="(publication$ | async) as publications;">
+      <div *ngFor="let publication of publications">
+        <app-card [publication]="publication"></app-card>
+      </div>
+    </ng-container>
+  </div> -->
+
+
+
+<div class="">
+  <app-footer></app-footer>
+</div>
+
+
