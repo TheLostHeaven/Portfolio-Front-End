@@ -10,24 +10,16 @@ import { environment } from 'src/environments/environment';
 
 export class HomeService {
 
-  private baseUrl : string;
 
-  constructor(private http: HttpClient) {
-    this.baseUrl = environment.apiUrl
-  }
+  constructor(private http: HttpClient) { }
 
-  public getPublication(endpoint: string): Observable<Publication[]> {
-    const url = `${this.baseUrl}${endpoint}`;
-    return this.http.get<Publication[]>(url);
-  }
-
-  public getPubli(): Observable<Publication[]>{
-    const url = `${this.baseUrl}/publications/`
+  public getPubli(): Observable<Publication[]> {
+    const url = `${environment.apiUrl}/publications/`
     return this.http.get<Publication[]>(url);
   }
 
     getImg(img: string): Observable<Publication[]>{
-    const url = `${this.baseUrl}/img/${img}`;
+    const url = `${environment.apiUrl}/img/${img}`;
     return this.http.get<Publication[]>(url);
   }
 }
