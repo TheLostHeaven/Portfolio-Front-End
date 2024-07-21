@@ -1,26 +1,16 @@
-// module.exports = {
-//   darkMode: 'class',
-//   content: {
-//     enabled: true,
-//     content: [
-//       './src/**/*.{html,ts}',
-//     ],
-//   },
-// }
-
+/** @type {import('tailwindcss').Config} */
 
 module.exports = {
   darkMode: 'class',
-  content: {
     enabled: true,
     content: [
       './src/**/*.{html,ts}',
+      './components/**/*.{html,ts}',
     ],
-  },
+
   theme: {
     extend: {
       colors: {
-        customPrimaryColor: '#C778DD',
       },
     },
   },
