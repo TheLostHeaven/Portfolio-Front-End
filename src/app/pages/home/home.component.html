@@ -1,9 +1,10 @@
+<!-- Header -->
 <div class="header">
   <app-header></app-header>
 </div>
 
+<!-- Main -->
 <div class="main">
-
 <section class="bg-white dark:bg-gray-900">
   <div class="container px-10 py-10 mx-auto">
       <section class="mt-8 space-y-8 lg:mt-12">
@@ -27,6 +28,7 @@
   </div>
 </section>
 
+<!-- Proyectos -->
 <section class="bg-white dark:bg-gray-900">
   <div class="container px-10 py-10 mx-auto">
       <section class="mt-8 space-y-8 lg:mt-12">
@@ -35,7 +37,7 @@
                   <h1 class="title"><span>#/</span>Proyectos</h1>
                 </div>
                   <div class="lg:w-full">
-                    <button class="overflow-hidden relative p-2 bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group w-full rounded-lg text-right text-bottom">
+                    <button class="overflow-hidden  p-2 bg-black text-white border-none  text-xl font-bold cursor-pointer relative z-10 group w-full rounded-lg text-right text-bottom">
                       <a href="/Projects">
                         Ver Todo ->
                         <span class="absolute w-36 h-32 -top-8 -left-2 bg-green-200 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-bottom"></span>
@@ -49,26 +51,33 @@
       </section>
   </div>
 </section>
+
+  <section>
+    <div class="post-list container px-10 py-10 mx-auto flex flex-wrap -m-5">
+      <app-card *ngFor="let post of posts" [publication]="post"></app-card>
+    </div>
+  </section>
+
+
+<!-- Sobre mí -->
+  <section class="bg-white dark:bg-gray-900">
+    <div class="container px-10 py-10 mx-auto">
+        <section class="mt-8 space-y-8 lg:mt-12">
+            <section class="lg:flex">
+                  <div class="">
+                    <h1 class="title"><span>#/</span>Sobre mí</h1>
+                  </div>
+                </section>
+                <div class="title2">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, neque molestias suscipit ea ipsum expedita soluta nulla commodi aperiam voluptates eius nihil et inventore qui id assumenda odit magni. Quasi esse molestiae labore sunt aperiam, earum asperiores veniam nostrum, incidunt dolor repudiandae laudantium omnis quo beatae magnam rerum optio ea minus eum quae atque accusantium aut? Eos voluptatum velit temporibus voluptates nesciunt distinctio! Ducimus nisi laboriosam, sed facilis consequuntur dolore molestias veritatis accusamus at itaque nesciunt rem soluta quo exercitationem in cum? Cum nostrum id quos blanditiis, officia voluptatibus placeat assumenda velit nobis minima culpa possimus provident consequatur officiis dolores iste earum magnam. Cumque repellat est exercitationem distinctio, porro velit aliquam totam. Molestias esse ad cumque! Dicta soluta quis, accusantium blanditiis, quos, deleniti amet voluptatum tempora quae veritatis nulla id at! Explicabo voluptatibus iure corrupti dolorum veniam molestias minus vitae quidem aperiam sunt culpa tempora quod, reprehenderit alias quae odit vero officia labore et iusto laboriosam. Consequatur at in illum dolorem. Odit alias quo molestias dolor provident eveniet laborum sit velit consequatur pariatur! Corporis illo nemo ipsa eos. Repellendus animi ut modi sint minus, ab magni ratione illum qui necessitatibus, nisi harum deleniti unde quidem voluptates sunt odio! Eligendi quibusdam ducimus iure voluptatum minima molestiae voluptates fuga beatae tempora, quas ratione cumque quod veritatis? Fugit deleniti omnis atque praesentium inventore facere beatae in architecto quod. Non eos rem praesentium maxime in architecto? Necessitatibus modi laudantium id? Optio iste earum sequi provident debitis libero iusto, consectetur aliquid distinctio, eligendi tenetur! Quae in voluptate quo mollitia distinctio consectetur ab rem nobis aut, cum eligendi atque odio veritatis. Consectetur placeat nihil nulla eveniet maxime corporis veniam? Accusantium doloribus nesciunt omnis cupiditate culpa inventore at placeat earum minima, sunt, perspiciatis, laboriosam aliquid veritatis molestiae. Labore, ullam possimus numquam est culpa doloremque sint nostrum praesentium dolor quasi distinctio eius eveniet ab facere quod eos! Hic voluptate ipsa eligendi itaque minima voluptatem iste doloribus beatae culpa impedit excepturi omnis exercitationem voluptatibus odio commodi debitis illum nemo, ipsam necessitatibus natus. Illum reiciendis laborum natus aperiam ad laudantium vitae consequuntur eos neque! Reiciendis ea blanditiis placeat praesentium ex, minus tenetur consequuntur ipsam provident quisquam, laudantium, vero porro quidem? Autem dolores ab beatae deserunt consequatur inventore eum perferendis iusto tenetur aspernatur molestias nisi illum numquam nam architecto nihil quis, nesciunt voluptatibus quod sed praesentium molestiae eos odio blanditiis? Eum minus fuga dicta excepturi amet. Rem eaque omnis consequatur aut ipsam labore fugiat vero veritatis! Accusantium culpa autem repudiandae odio porro, consectetur dolore itaque eligendi adipisci temporibus, natus minus. Dolorem soluta laboriosam animi vitae consectetur, ipsa quasi ducimus illum, natus commodi fugit autem eveniet magni? Officiis temporibus accusantium laboriosam reiciendis. Maiores, consequuntur culpa, exercitationem quidem accusamus aliquid deserunt eius inventore aliquam nesciunt quas. Eaque delectus voluptas, maxime ipsum sapiente quidem eos quis ea magni officiis necessitatibus totam quos ex earum eum doloremque rem beatae cupiditate illum! Reprehenderit nesciunt rem a inventore, ipsum tempore illo vero impedit itaque aspernatur est accusamus, dignissimos nulla, voluptate facere eos deserunt asperiores odit repudiandae harum!</p>
+
+                </div>
+            </section>
+    </div>
+  </section>
+
 </div>
-
-
-  <div class="items-center">
-    <ng-container *ngIf="(publication$ | async ) as publications;" >
-      <app-card *ngFor="let publication of publications" [publication]="publication"></app-card>
-    </ng-container>
-  </div>
-
-  <!-- <div class="items-center">
-    <ng-container *ngIf="(publication$ | async) as publications;">
-      <div *ngFor="let publication of publications">
-        <app-card [publication]="publication"></app-card>
-      </div>
-    </ng-container>
-  </div> -->
-
-
-
-<div class="">
+<div class="footer">
   <app-footer></app-footer>
 </div>
 
